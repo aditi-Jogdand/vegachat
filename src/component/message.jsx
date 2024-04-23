@@ -1,7 +1,7 @@
 import { createSignal } from 'solid-js';
 // import logo from '../logo.webp';
 import styles from '../App.module.css';
-import rabbit from '../rabbitt.png';
+import rabbit from '../images/rabbitt.png';
 
 const message = () => {
     return (

@@ -1,6 +1,6 @@
-import dev1Img from '../rabit.webp';
-import dev2Img from '../exercise.webp';
-import dev3Img from '../rabit3.webp';
+import dev1Img from '../images/rabit.webp';
+import dev2Img from '../images/exercise.webp';
+import dev3Img from '../images/rabbitt.png';
 
 const CommunityDevs = () => {
   return (

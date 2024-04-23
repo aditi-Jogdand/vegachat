@@ -3,8 +3,7 @@ import { onCleanup } from 'solid-js';
 import { createEffect } from 'solid-js';
 import { onMount } from 'solid-js';
 
-import styles from '../App.module.css';
-import logo from '../logo.webp';
+import logo from '../../logo.webp';
 
 
 const navbar = () => {

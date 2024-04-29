@@ -1,8 +1,12 @@
 function Contact() {
   return (
-    <div class="bg-transparent px-20">
+    <>
+    <div class="h-40 ">
+      </div>
+    <div class="bg-transparent px-20 pb-5">
       <form class="w-full max-w-sm">
-        
+        <h1 class="text-2xl">Contact Us</h1>
+        <hr class=" w-9	 bg-purple-800 h-1" />
       <div class="md:flex md:items-center mb-6">
           <div class="md:w-1/3">
             <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-email">
@@ -74,6 +78,7 @@ function Contact() {
         Be part of our vibrant community dedicated to plant-based living and wellness. Share your journey, seek advice, and connect with like-minded individuals who are passionate about healthy living and compassionate choices.
       </p>
     </div>
+    </>
   );
 }
 

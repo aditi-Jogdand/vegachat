@@ -5,17 +5,19 @@ import { Router, Route } from "@solidjs/router";
 const Service = lazy(() => import("./component/services"));
 const Home = lazy(() => import("./component/home"));
 const Pricing = lazy(() => import("./component/pricing"));
+const About = lazy(() => import("./component/about"));
+const Contact = lazy(() => import("./component/contact"));
+
 
 import "tailwindcss/tailwind.css";
 
 import "./index.css";
-import Navbar from "./component/root/nav";
+import Nav from "./component/root/nav";
 import Footerr from "./component/root/footer";
 
 const App = props => (
   <>
-  <Navbar/>
-    
+  <Nav/>
     {props.children}
     <Footerr/>
   </>
@@ -25,6 +27,8 @@ render(() => (
   <Router root={App}>
     <Route path="/services" component={Service} />
     <Route path="/pricing" component={Pricing}/>
+    <Route path="/about" component={About}/>
+    <Route path="/contact" component={Contact}/>
     <Route path="/" component={Home} />
     
   </Router>

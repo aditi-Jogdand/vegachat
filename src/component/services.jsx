@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js';
 // import FullScreenEmojiComponent from './root/bg';
-// import Navbar from './root/nav';
+// import Nav from './root/nav';
 
 const Services = () => {
   const [services] = createSignal([
@@ -58,8 +58,6 @@ const Services = () => {
 
   return (
     <>
-      {/* <div class='h-20'></div> */}
-      
       <div class="py-12 bg-green-400">
       <div class="py-12 px-4 sm:px-6">
         <h1 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">Discover Our Services</h1>

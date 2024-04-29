@@ -1,5 +1,8 @@
+// import Nav from "./root/nav";
+
 function Pricing(){
     return (
+    <>
       <div class="py-12 bg-gray-100">
         <div class="py-12 px-4 sm:px-6">
           <h1 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">Explore Our Premium Plans</h1>
@@ -29,6 +32,7 @@ function Pricing(){
           </div>
         </div>
       </div>
+      </>
     );
   };
   

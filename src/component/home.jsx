@@ -13,7 +13,6 @@ import Rules from "./home/rules";
 function home (){
     return (
         <> 
-       
         <div class='py-50'></div>
         <Message/>
         <FeatureHighlights/>
@@ -23,7 +22,6 @@ function home (){
         <VedaCulture/>
         <Rules/>
         <FAQ/>
-        <Footerr/>
        <FullScreenEmojiComponent class='z-0 '> </FullScreenEmojiComponent>
         </>
     )

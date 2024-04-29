@@ -28,12 +28,12 @@ const navbar = () => {
     <div class='fixed w-full z-20'>
       <nav class="bg-white border-gray-200 dark:bg-gray-900 fixed w-full ">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 	">
-          <A href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src={logo} class=" h-8 select-none	" alt="Vegachat Logo" />
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
               Vegachat
             </span>
-          </A>
+          </a>
           <button
             onClick={toggleMenu}
             type="button"
@@ -68,45 +68,45 @@ const navbar = () => {
               class="font-medium flex flex-col p-4 md:p-0 mt-4  border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
             >
               <li>
-                <A
+                <a
                   href="/"
                   class="block py-2 px-3 text-white bg-pink-700 rounded md:bg-transparent md:text-pink-700 md:p-0 dark:text-white md:dark:text-pink-500"
                   aria-current="page"
                 >
                   Home
-                </A>
+                </a>
               </li>
               <li>
-                <A
+                <a
                   href="/about"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   About
-                </A>
+                </a>
               </li>
               <li>
-                <A
+                <a
                   href="/services"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Services
-                </A>
+                </a>
               </li>
               <li>
-                <A
+                <a
                   href="/pricing"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Pricing
-                </A>
+                </a>
               </li>
               <li>
-                <A
-                  href="/pricing"
+                <a
+                  href="/contact"
                   class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-pink-700 md:p-0 dark:text-white md:dark:hover:text-pink-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Contact
-                </A>
+                </a>
               </li>
             </ul>
           </div>

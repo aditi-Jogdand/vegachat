@@ -14,7 +14,6 @@ function home (){
     return (
         <> 
        
-       
         <div class='py-50'></div>
         <Message/>
         <FeatureHighlights/>

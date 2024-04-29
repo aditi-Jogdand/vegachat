@@ -1,6 +1,7 @@
 import { createSignal } from 'solid-js';
 // import FullScreenEmojiComponent from './root/bg';
-import Navbar from './root/nav';
+// import Navbar from './root/nav';
+
 const Services = () => {
   const [services] = createSignal([
     {
@@ -54,33 +55,40 @@ const Services = () => {
     }
   ]);
 
+
   return (
     <>
-    <Navbar/>
-    <div class='h-20'></div>
-    <div class="py-12">
-    <div class="bg-transparent py-12">
-      <div class=" px-4 sm:px-6 ">
-        <h1 class="text-3xl font-extrabold text-gray-900  mb-8 text-center">Discover Our Services</h1>
-        <ul class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-8">
+      {/* <div class='h-20'></div> */}
+      
+      <div class="py-12 bg-green-400">
+      <div class="py-12 px-4 sm:px-6">
+        <h1 class="text-3xl font-extrabold text-gray-900 mb-8 text-center">Discover Our Services</h1>
+        <h2 class="text-center bg-green-200 mb-14 rounded border-green-800 border-2 p-6 ">We aren't just a social media platform; we are the future. Let's communicate, share knowledge, and spread kindness through words and works.</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 pr-8">
           {services().map(service => (
-            <li class="flex items-center p-20 drop-shadow-xl  space-x-4 shadow-inner  bg-gray-100">
-              <span class="text-8xl">{service.icon}</span>
-              <div class=''>
-                <h2 class="text-xl font-bold text-gray-800 dark:text-800 mb-2">{service.title}</h2>
-                <p class="text-gray-600 dark:text-gray-600 p-5">{service.description}</p>
-                <button class='text-white bg-teal-900 border-4 border-double border-sky-500 hover:text-gray-500 rounded-md drop-shadow-2xl p-2'><a href="#" c>know more</a></button>
+            <li class="flex flex-col bg-white rounded-md shadow-md "
+            //  style="box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;"
+            style="box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(31, 193, 27) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(255, 217, 19) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px, rgb(255, 156, 85) 30px -30px, rgb(255, 255, 255) 40px -40px 0px -3px, rgb(255, 85, 85) 40px -40px;"
+             >
+              <div class="p-6 flex items-center">
+                <span class="text-4xl rounded-full bg-gray-300 w-14 h-14 flex items-center justify-center border-gray-400 border-4 hover:grayscale">{service.icon}</span>
+                <h2 class="text-xl font-bold text-gray-800 dark:text-800 ml-4">{service.title}</h2>
+              </div>
+              <p class="text-gray-600 dark:text-gray-600 px-6 pb-4">{service.description}</p>
+              <div class="flex justify-center mb-6">
+                <button class="text-white bg-teal-900 border-4 border-double border-sky-500 hover:text-green-500 rounded-md drop-shadow-2xl hover:bg-white p-2"><a href="#">Know More</a></button>
               </div>
             </li>
           ))}
         </ul>
       </div>
-    </div>
-    </div> 
-     {/* <FullScreenEmojiComponent></FullScreenEmojiComponent> */}
-   </>
-  );   
+      <div class="py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
 
+      </div>
+    </div>
+
+    </>
+  );
 };
 
 export default Services;

@@ -1,3 +1,4 @@
+import team from '../../src/images/3rabbits.png';
 
 const About = () => {
     return (<>
@@ -28,7 +29,8 @@ const About = () => {
           </div>
           <div class="flex justify-center">
             <img
-              src="../src/images/3rabbits.png" 
+              src={team} 
+              alt="Our Team"
               class="w-full max-w-sm mx-auto"
             />
           </div>

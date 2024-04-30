@@ -16,17 +16,17 @@ const CommunityDevs = () => {
         <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div class="flex flex-col items-center space-y-4 bg-gray-100 dark:bg-gray-700 rounded-lg p-6">
             <img class="h-40 w-40 rounded-full" src={dev1Img} alt="Developer 1" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">khdoos-sisso</h3>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Abhinav</h3>
             <p class="text-gray-500 dark:text-gray-300">Backend Engineer</p>
           </div>
           <div class="flex flex-col items-center space-y-4 bg-gray-100 dark:bg-gray-700 rounded-lg p-6">
             <img class="h-40 w-40 rounded-full" src={dev2Img} alt="Developer 2" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Khdoos dida</h3>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Akriti</h3>
             <p class="text-gray-500 dark:text-gray-300">UX/UI Designer</p>
           </div>
           <div class="flex flex-col items-center space-y-4 bg-gray-100 dark:bg-gray-700 rounded-lg p-6">
             <img class="h-40 w-40 rounded-full" src={dev3Img} alt="Developer 3" />
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Ms solly</h3>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Aditi</h3>
             <p class="text-gray-500 dark:text-gray-300">Developer (Role TBD)</p>
           </div>
         </div>

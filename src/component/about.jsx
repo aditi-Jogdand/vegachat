@@ -28,8 +28,7 @@ const About = () => {
           </div>
           <div class="flex justify-center">
             <img
-              src="../../src/images/3rabbits.png" // Replace with your own illustration
-              alt="About Illustration"
+              src="../src/images/3rabbits.png" 
               class="w-full max-w-sm mx-auto"
             />
           </div>

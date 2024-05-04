@@ -1,6 +1,6 @@
 import Nav from "./root/nav";
 import Footerr from "./root/footer";
-import team from '../images/threerabbits.png'
+import team from '../../src/images/3rabbits.png';
 
 const About = () => {
     return (<>

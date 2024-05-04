@@ -41,7 +41,7 @@ const Register = () => {
               <label for="terms" class="ml-3 text-sm font-light text-gray-500">I accept the <a class="font-medium text-primary-600 hover:underline" href="#">Terms and Conditions</a></label>
             </div>
             <button type="submit" class="bg-gray-500 p-2 btn-primary text-white w-full">Create an account</button>
-            <p class="text-sm font-light text-gray-500">Already have an account? <a href="#" class="font-medium text-primary-600 hover:underline">Login here</a></p>
+            <p class="text-sm font-light text-gray-500">Already have an account? <a href="/login" class="font-medium text-primary-600 hover:underline">Login here</a></p>
           </form>
         </div>
       </div>

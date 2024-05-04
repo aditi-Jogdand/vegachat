@@ -33,7 +33,7 @@ const Login = () => {
               <input type="password" name="password" id="password" placeholder="••••••••" class="input-field bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required=""/>
             </div>
             <button type="submit" class="bg-gray-500 p-2 btn-primary text-white w-full">Log in</button>
-            <p class="text-sm font-light text-gray-500">Don't have an account yet? <a href="#" class="font-medium text-primary-600 hover:underline">Create one here</a></p>
+            <p class="text-sm font-light text-gray-500">Don't have an account yet? <a href="\register" class="font-medium text-primary-600 hover:underline">Create one here</a></p>
           </form>
         </div>
       </div>

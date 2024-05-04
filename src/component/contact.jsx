@@ -1,5 +1,5 @@
-// import Nav from "./root/nav";
-// import Footer from "./root/footer";
+import Nav from "./root/nav";
+import Footer from "./root/footer";
 
 function Contact() {
   return (

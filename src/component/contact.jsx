@@ -1,60 +1,90 @@
-import { createSignal } from "solid-js";
+// import Nav from "./root/nav";
+// import Footer from "./root/footer";
 
-const Contact = () => {
-  const [formData, setFormData] = createSignal({ name: "", email: "", message: "" });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData(), [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission, e.g., send data to backend or display a success message
-    console.log("Form submitted:", formData());
-  };
-
+function Contact() {
   return (
     <>
-    <div class="bg-white dark:bg-gray-800 py-5">
-
-      <div class="mt-16 text-center bg-gradient-to-r from-[#2b8ec0] to-[#5cad44] py-12 px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
-          Let's connect
-        </h2>
-        <p class="mt-4 text-lg text-white py-5">
-          Have something to say? let's have a small talk with our team✍️🌍
-        </p>
-        <form class="max-w-lg mx-auto" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            class="block w-full border-gray-300 rounded-md shadow-sm mb-4 p-2"
-            value={formData().name}
-            onInput={handleChange}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            class="block w-full border-gray-300 rounded-md shadow-sm mb-4 p-2"
-            value={formData().email}
-            onInput={handleChange}
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            class="block w-full border-gray-300 rounded-md shadow-sm mb-4 p-2 resize-none"
-            rows="5"
-            value={formData().message}
-            onInput={handleChange}
-          ></textarea>
-          <button type="submit" class="bg-white text-green-500 py-2 px-6 rounded-full shadow-md hover:bg-blue-300 hover:text-white transition duration-300 ease-in-out border-l-4 border-b-4 border-blue-400 hover:border-blue-300">Send Message</button>
-        </form>
+    <Nav/>
+    <div class="h-40 ">
       </div>
+    <div class="bg-transparent px-20 pb-5">
+      <form class="w-full max-w-sm">
+        <h1 class="text-2xl">Contact Us</h1>
+        <hr class=" w-9	 bg-purple-800 h-1" />
+      <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-email">
+              Email
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              id="inline-email"
+              type="e-mail"
+              value=""
+              placeholder="Your Email"
+            />
+          </div>
+        </div>
+
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+              Full Name
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              id="inline-full-name"
+              type="text"
+              value=""
+              placeholder="Your Name"
+            />
+          </div>
+        </div>
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-password">
+              Password
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input
+              class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+              id="inline-password"
+              type="password"
+              placeholder="******************"
+            />
+          </div>
+        </div>
+
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3"></div>
+          <label class="md:w-2/3 block text-gray-500 font-bold">
+            <input class="mr-2 leading-tight" type="checkbox" />
+            <span class="text-sm">
+              I want to receive your inspiring newsletters!
+            </span>
+          </label>
+        </div>
+        <div class="md:flex md:items-center">
+          <div class="md:w-1/3"></div>
+          <div class="md:w-2/3">
+            <button class="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+              Join the Community
+            </button>
+          </div>
+        </div>
+      </form>
+      <p class="mt-8 text-center text-gray-700">
+        Be part of our vibrant community dedicated to plant-based living and wellness. Share your journey, seek advice, and connect with like-minded individuals who are passionate about healthy living and compassionate choices.
+      </p>
     </div>
+    <Footer/>
     </>
   );
-};
+}
 
 export default Contact;

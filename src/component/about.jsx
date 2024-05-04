@@ -1,7 +1,10 @@
-import team from '../../src/images/3rabbits.png';
+import Nav from "./root/nav";
+import Footerr from "./root/footer";
+import team from '../images/threerabbits.png'
 
 const About = () => {
     return (<>
+    <Nav/>
 <div class="h-full bg-gradient-to-br from-green-200 to-blue-200">
         <div class="h-20">
         </div>
@@ -29,8 +32,8 @@ const About = () => {
           </div>
           <div class="flex justify-center">
             <img
-              src={team} 
-              alt="Our Team"
+              src={team}
+              alt="team"
               class="w-full max-w-sm mx-auto"
             />
           </div>
@@ -38,6 +41,7 @@ const About = () => {
       </div>
     </div>
 </div>
+<Footerr/>
         </>
     );
 };

@@ -1,4 +1,4 @@
-// import Nav from "./root/nav";
+import Nav from "./root/nav";
 import FullScreenEmojiComponent from './root/bg';
 import Message from './home/message';
 import FeatureHighlights from './highlights';
@@ -13,6 +13,7 @@ import Rules from "./home/rules";
 function home (){
     return (
         <> 
+        <Nav/>
         <div class='py-50'></div>
         <Message/>
         <FeatureHighlights/>
@@ -23,7 +24,9 @@ function home (){
         <Rules/>
         <FAQ/>
        <FullScreenEmojiComponent class='z-0 '> </FullScreenEmojiComponent>
+        <Footerr/>
         </>
     )
 }
 export default home;
+

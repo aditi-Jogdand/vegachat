@@ -112,7 +112,7 @@ const navbar = () => {
           </div>
         </div>
       </nav>
-      <div class='h-96'></div>
+      
       </div>
     </>
   );
